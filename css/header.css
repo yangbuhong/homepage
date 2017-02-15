@@ -1,0 +1,77 @@
+#design{ 
+	width:1200px;
+	height: auto;	
+	margin:0 auto;
+
+}
+#theme{ 
+	float:left;
+	width:100%;	
+}
+#theme{ 
+	float:left;
+	width:710px;
+	height:150px;
+	margin:2px;
+	background-image: url(../images/nav.png);
+	background-repeat:no-repeat ;
+
+}
+#theme a
+{
+	font-family:"微软雅黑";
+	font-size: 70px;
+	color:#666666;
+	text-decoration:none;
+}
+#theme a:link { 
+	font-family: "hakuyoxingshu7000";
+	font-size: 70px;
+	color:#FFDDDD;
+	text-decoration:none;
+} 
+#theme a:visited
+{
+	font-family: "hakuyoxingshu7000";
+	font-size: 70px;
+	color:#666666;
+	text-decoration:none;
+}
+#theme a:hover
+{
+	font-family: "hakuyoxingshu7000";
+	font-size: 70px;
+	color:#445566;
+	text-decoration:none;
+}
+#theme a:focus {outline-style:none; -moz-outline-style: none;}
+
+#nav {
+	float:right;
+	width:900px;
+	height:80px;
+    display:inline;    
+    line-height:60px;  
+    background: #E8E8E8; 
+	font-size: 13px;
+	border-radius: 20px;
+	
+}
+#nav li  
+{  	
+    float:left;  
+    width: 100px;
+	height:60px;
+	margin-left:60px;
+} 
+#nav li img {
+	opacity:1;
+	filter:alpha(opacity=100);
+}
+#nav li.current img{
+
+	opacity:0.3;
+	cursor:crosshair;
+	filter:alpha(opacity=0);
+}
+

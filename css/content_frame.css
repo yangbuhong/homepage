@@ -1,0 +1,19 @@
+#box{
+	float:left;
+	width:900px;
+	height:700px;
+	margin-left: 50px;
+	margin-top: 5px;
+	background-image: url(../images/45.gif);
+	background-repeat:no-repeat ;
+}
+#content{
+	float:left;
+	width:810px;
+	height:622px;
+	margin:35px;
+	margin-left:42px;
+	margin-top: 44px;
+	overflow-y: auto;
+	
+}

@@ -1,0 +1,57 @@
+
+#Container{  
+    width:720px;
+    height:622px ;
+    margin: 0 auto; /*设置整个容器在浏览器中水平居中*/
+}
+
+#header {	
+    height:50px;
+    font-size: 15px;
+
+}
+#header ul li{
+    float: left;
+    height:50px; 
+    list-style-type:none; 
+}
+#logo_left{
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    width: 300px;
+	margin-left:80px;
+    font-size: 15px;
+}
+#logo_left  li {	
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    height: 30px;
+    width: 300px;
+/*设置元素跟其他元素的距离为20像素*/  
+
+}
+#logo_right {
+	height:120px;
+	float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+    width:200px;
+    margin-left: 40px; 
+/*设置元素跟其他元素的距离为20像素*/  
+
+}
+   	
+}
+
+#Content-Left { 
+	float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+	height:890px;
+    width:20px;
+
+	
+}
+.detail{
+    width:600px;
+    float:left;/*设置浮动，实现多列效果，div+Css布局中很重要的*/
+	font-size: 15px;
+    width:600px;/*设置元素跟其他元素的距离为20像素*/	
+}
+
+
+
