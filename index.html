@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>人间有味是清欢</title>	
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/calender.css"/>
+		<link rel="stylesheet" type="text/css" href="css/booksheet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content_frame.css"/>
+		<link rel="stylesheet" type="text/css" href="css/star.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/message.css"/>
+		<link href="booklet/jquery.booklet.1.1.0.css" type="text/css" rel="stylesheet" media="screen" />
+		<link rel="stylesheet" href="css/booksheet.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" type="text/css" href="css/sinaFaceAndEffec.css" />
+        <script type="text/javascript" src="JS/jquery-1.8.3.min.js"></script>
+		<script src="JS/jquery-2.1.0.js" type="text/javascript"></script>
+		<script src="JS/star.js" type="text/javascript"></script>
+		<script src="JS/book.js" type="text/javascript"></script> 
+		<script src="http://libs.baidu.com/jquery/1.4.4/jquery.min.js"></script>
+		<script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+		<script src="booklet/jquery.booklet.1.1.0.min.js" type="text/javascript"></script>	
+	</head>
+	<body>	
+		<div id="design">
+				<div id="header">		
+					<div id="theme">
+					<a href="http://user.qzone.qq.com/1144894801" target="_blank">*人间有味是清欢*</a>
+						
+					</div>
+					<div id="calender">
+				
+					</div>	
+				</div>
+				<div id="nav">
+							<ul>
+								<li><a href="http://www.runoob.com/" target="apple"><span>主页</span><img src="images/house.png"/></a></li>
+								<li><a href="content/resume.html" target="apple"><span>关于我</span><img src="images/jianli.png"/></a></li>
+								<li><a href="https://li-xinyang.gitbooks.io/frontend-notebook/content/" target="apple"><span>笔记</span><img src="images/note.png"/></a></li>
+								<li><a href="http://www.baidu.com.cn/index.html" target="apple"><span>作品</span><img src="images/design.png"/></a></li>	
+								<li><a href="http://www.baidu.com.cn/index.html" target="apple"><span>收藏</span><img src="images/13.png"/></a></li>	
+							</ul>
+					</div>
+				<div id="booksheet">
+						<div class="book_wrapper">
+							<a id="next_page_button"></a>
+							<a id="prev_page_button"></a>
+								<div id="mybook" style="display:none;">
+									<div class="b-load">
+										<div>
+											<ul>
+												<li><a href="content/JavaScript高级程序设计.pdf"   class="view" title="JavaScript高级程序设计" target="apple"><img src="images/JavaScript高级程序设计 .jpg""/></a></li>
+												<li><img src="images/css网站布局实录.jpg" alt=""/></li>
+												<li><img src="images/JavaScript脚本特效编程.jpg" alt=""/></li>
+												<li><img src="images/HTML5canvas基础教程.jpg" alt=""/></li>
+											</ul>
+										</div>
+										<div>
+											<ul>
+												<li><img src="images/JavaScript框架高级编程.jpg" alt=""/></li>
+												<li><img src="images/javasc宝典.jpg" alt=""/></li>
+												<li><img src="images/简洁的jQuery.jpg" alt=""/></li>
+											</ul>
+										</div>
+									</div>
+							    </div>
+						</div>
+						 
+					    <div id="message_box">
+							<div class="wrap">
+								<div class="comment">
+									<div class="head-face">
+										<img src="images/1.gif" / >
+										<p>我是</p>
+									</div>
+									<div class="content">
+										<div class="cont-box">
+											<textarea class="text" placeholder="请输入..."></textarea>
+										</div>
+										<div class="tools-box">
+											<div class="operator-box-btn"><span class="face-icon"  >☺</span><span class="img-icon">▧</span></div>
+											<div class="submit-btn"><input type="button" onClick="out()"value="submit" /></div>
+										</div>
+									</div>
+								</div>
+								<div id="message">
+									<ul></ul>
+								</div>
+							</div>
+						</div>	
+			   </div>	
+				<div id="box">
+						<div id=content>
+							<iframe id="apple" src="http://www.runoob.com/"  name="apple"  width="820px" height="622px" frameborder="no" scrolling="none" marginwidth="0"   marginheight="0"/></iframe>
+						</div>		
+				</div>			
+			<div id="star">  
+				<span class="main">喜欢您就给个好评吧！</span>  
+				<ul>  
+					<li><a href="javascript:;">1</a></li>  
+					<li><a href="javascript:;">2</a></li>  
+					<li><a href="javascript:;">3</a></li>  
+					<li><a href="javascript:;">4</a></li>  
+					<li><a href="javascript:;">5</a></li>  
+				</ul>  
+				<span></span>  
+				<p></p>
+			</div> 					
+		</div>
+	</body>
+	<script type="text/javascript" src="JS/main.js"></script>
+	<script type="text/javascript" src="JS/sinaFaceAndEffec.js"></script>
+	<script type="text/javascript">
+		// 绑定表情
+		$('.face-icon').SinaEmotion($('.text'));
+		// 测试本地解析
+		function out() {
+			var inputText = $('.text').val();
+			$('#message ul').prepend(reply(AnalyticEmotion(inputText)));
+		}
+		
+		$(".img-icon").click(function(){
+			$(".cont-box .text").insertContent('<img src="请在这里输入图片地址" alt=""/>', -10);
+		});
+	
+	var html;
+	function reply(content){
+		var html = '<li>'+'<div class="head-face">'+'<img src="images/1.gif" / >'+'</div>'+'<div class="reply-cont">'+'<p class="username">杨宝宝</p>'+'<p class="comment-body">'+content+'</p>'+'<p class="comment-footer">2017年1月13日　回复　</p>'+'</div>'+'</li>';
+		return html;
+		}
+	</script>
+</html>
